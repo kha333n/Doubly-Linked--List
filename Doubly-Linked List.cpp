@@ -2,13 +2,29 @@
 //
 
 #include <iostream>
-
+#include "List.cpp"
 using namespace std;
 
 int main()
 {
-	int x = 0 , y = 0;
-	x = x / y;
+	List<int> l1;
+	l1.add(5);
+	l1.add(6);
+	l1.add(7);
+	l1.previous();
+	l1.remove();
+	l1.add(8);
+	l1.start();
+	while (l1.next())
+	{
+		cout << l1.get() << endl;
+	}
+	while (l1.previous())
+	{
+		cout << l1.get() << endl;
+	}
+	cout << l1.length() << endl;
+	return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

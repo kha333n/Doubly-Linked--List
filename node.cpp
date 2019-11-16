@@ -1,4 +1,4 @@
-#include "node.h"
+
 template<class T>
 inline T node<T>::get()
 {
